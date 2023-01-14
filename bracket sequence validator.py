@@ -1,6 +1,6 @@
 # A program that takes in a sequence of brackets and determines whether or not the sequence is valid.
 
-# Accepted characters: ()[]{}
+# Accepted characters: ()[]{} -> normal, square and curly brackets
 
 # The sequence of brackets is said to be valid if the string contains PAIRS of brackets that are of
 # the same type and are in the correct order.
@@ -8,6 +8,16 @@
 # NOTES:
 # - This algorithm uses a stack data structure.
 # - All whitespaces, including those in between words, are removed.
+
+# EXAMPLES OF VALID SEQUENCES:
+# - {{}()}
+# - [((){{}})]
+# - {()[[]]({})}
+
+# EXAMPLES OF INVALID SEQUENCES:
+# - )({})
+# - {[[)()}
+# - {(})
 
 
 from DataStructures import Stack
